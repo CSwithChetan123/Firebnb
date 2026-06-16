@@ -143,6 +143,10 @@ app.use('/listings', listingRouter);
 app.use('/listings/:id/reviews', reviewsRouter);
 app.use('/', userRouter);
 
+// Root route redirect to listings
+app.get('/', (req, res) => {
+    res.redirect('/listings');
+});
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
