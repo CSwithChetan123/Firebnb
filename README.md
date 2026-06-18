@@ -92,14 +92,7 @@ npm install
 
 ### 4. Configure Environment Variables
 
-Create a `.env` file in the root directory of your project and populate it with your own cloud connection strings and session keys (never share your actual keys publicly):
-
-```env
-MONGO_ATLAS_URL=mongodb+srv://your_username:your_password@cluster.example.mongodb.net/your_db_name
-SECRET_KEY=your_custom_session_encryption_secret
-PORT=3000
-
-```
+Create a `.env` file in the root directory of your project and populate it with your own cloud connection strings and session keys (never share your actual keys publicly).
 
 ### 5. Run the Application
 
